@@ -11,9 +11,9 @@ namespace Cwiczenia2
     {
         static void Main(string[] args)
         {
-            String type = "";
-            String file = "";
-            String xmlFile = "";
+            string type = "";
+            string file = "";
+            string xmlFile = "";
             for (int i = 0; i < args.Length; i++)
             {
                 if (args[i].Length == 3)
@@ -29,8 +29,8 @@ namespace Cwiczenia2
             if(xmlFile=="")
             xmlFile = @"żesult.xml";
             if(file=="")
-            file = @"data.csv"; 
-            String logFile = @"log.txt";
+            file = @"data.csv";
+            string logFile = @"log.txt";
             FileInfo f = new FileInfo(file);
             FileInfo f2 = new FileInfo(logFile);
             var list = new List<Student>();
